@@ -1,0 +1,282 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Contact NoLimit Construction - Pennsylvania & New Jersey | Free Quotes">
+  <Navigation />
+  
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-gray-900 to-black text-white py-20 mt-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center">
+        <h1 class="text-5xl font-bold mb-6">
+          Contact <span class="text-lime">NoLimit Construction</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Ready to start your construction project? Get in touch with Pennsylvania and New Jersey's premier concrete construction company. Free quotes available!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Methods -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+        <p class="text-xl text-gray-600">Multiple ways to contact us for your construction needs</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+          <div class="w-20 h-20 bg-lime rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-phone text-2xl text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Call Us</h3>
+          <p class="text-gray-600 mb-6">Speak directly with our construction experts</p>
+          <a href="tel:267-813-1136" class="bg-lime text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-lime-light transition-colors">
+            (267) 813-1136
+          </a>
+          <p class="text-gray-500 text-sm mt-4">Available 7 days a week</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+          <div class="w-20 h-20 bg-lime rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-envelope text-2xl text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Email Us</h3>
+          <p class="text-gray-600 mb-6">Send us your project details for a quote</p>
+          <a href="mailto:nolimitconstruction83@gmail.com" class="bg-lime text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-lime-light transition-colors">
+            Email Now
+          </a>
+          <p class="text-gray-500 text-sm mt-4">Response within 24 hours</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+          <div class="w-20 h-20 bg-lime rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-map-marker-alt text-2xl text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Service Areas</h3>
+          <p class="text-gray-600 mb-6">We serve all of Pennsylvania & New Jersey</p>
+          <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-gray-800 font-semibold">PA & NJ Licensed & Insured</p>
+            <p class="text-gray-600 text-sm">Free estimates available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-20 bg-black text-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Request a Free Quote</h2>
+        <p class="text-xl text-gray-300">Tell us about your project and we'll get back to you with a detailed estimate</p>
+      </div>
+      
+      <div class="bg-gray-900 p-8 rounded-2xl">
+        <form class="space-y-6" action="mailto:nolimitconstruction83@gmail.com" method="post" enctype="text/plain">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="firstName" class="block text-sm font-semibold mb-2">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-lime focus:outline-none">
+            </div>
+            <div>
+              <label for="lastName" class="block text-sm font-semibold mb-2">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-lime focus:outline-none">
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="email" class="block text-sm font-semibold mb-2">Email Address *</label>
+              <input type="email" id="email" name="email" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-lime focus:outline-none">
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-semibold mb-2">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-lime focus:outline-none">
+            </div>
+          </div>
+          
+          <div>
+            <label for="location" class="block text-sm font-semibold mb-2">Project Location *</label>
+            <select id="location" name="location" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-lime focus:outline-none">
+              <option value="">Select your location</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="service" class="block text-sm font-semibold mb-2">Service Needed *</label>
+            <select id="service" name="service" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-lime focus:outline-none">
+              <option value="">Select a service</option>
+              <option value="Pole Barns">Pole Barns</option>
+              <option value="Metal Garages">Metal Garages</option>
+              <option value="Concrete Slabs">Concrete Slabs</option>
+              <option value="Pools & Decks">Pools & Decks</option>
+              <option value="General Concrete Work">General Concrete Work</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="projectDetails" class="block text-sm font-semibold mb-2">Project Details *</label>
+            <textarea id="projectDetails" name="projectDetails" rows="4" required placeholder="Please describe your project, including size, timeline, and any specific requirements..." class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-lime focus:outline-none"></textarea>
+          </div>
+          
+          <div>
+            <label for="budget" class="block text-sm font-semibold mb-2">Estimated Budget</label>
+            <select id="budget" name="budget" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-lime focus:outline-none">
+              <option value="">Select budget range</option>
+              <option value="Under $10,000">Under $10,000</option>
+              <option value="$10,000 - $25,000">$10,000 - $25,000</option>
+              <option value="$25,000 - $50,000">$25,000 - $50,000</option>
+              <option value="$50,000 - $100,000">$50,000 - $100,000</option>
+              <option value="Over $100,000">Over $100,000</option>
+            </select>
+          </div>
+          
+          <div class="flex items-start space-x-3">
+            <input type="checkbox" id="consent" name="consent" required class="mt-1 w-4 h-4 text-lime bg-gray-800 border-gray-700 rounded focus:ring-lime focus:ring-2">
+            <label for="consent" class="text-sm text-gray-300">
+              I consent to NoLimit Construction contacting me about my project. * <br>
+              <span class="text-gray-400">We respect your privacy and will never share your information.</span>
+            </label>
+          </div>
+          
+          <div class="text-center">
+            <button type="submit" class="bg-lime text-black px-12 py-4 rounded-lg font-semibold text-lg hover:bg-lime-light transition-colors">
+              Send Request
+            </button>
+            <p class="text-gray-400 text-sm mt-4">* Required fields</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Service Areas</h2>
+        <p class="text-xl text-gray-600">We proudly serve Pennsylvania and New Jersey</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-6 text-lime">Pennsylvania</h3>
+          <div class="grid grid-cols-2 gap-4 text-gray-600 mb-6">
+            <div>• Philadelphia</div>
+            <div>• Bucks County</div>
+            <div>• Montgomery County</div>
+            <div>• Delaware County</div>
+            <div>• Chester County</div>
+            <div>• Berks County</div>
+            <div>• Lancaster County</div>
+            <div>• Lehigh County</div>
+            <div>• Northampton County</div>
+            <div>• Carbon County</div>
+            <div>• Monroe County</div>
+            <div>• Pike County</div>
+          </div>
+          <div class="text-center">
+            <a href="tel:267-813-1136" class="bg-lime text-black px-6 py-3 rounded-lg font-semibold hover:bg-lime-light transition-colors">
+              Call (267) 813-1136
+            </a>
+          </div>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-6 text-lime">New Jersey</h3>
+          <div class="grid grid-cols-2 gap-4 text-gray-600 mb-6">
+            <div>• Camden</div>
+            <div>• Burlington County</div>
+            <div>• Gloucester County</div>
+            <div>• Salem County</div>
+            <div>• Cumberland County</div>
+            <div>• Atlantic County</div>
+            <div>• Cape May County</div>
+            <div>• Ocean County</div>
+            <div>• Monmouth County</div>
+            <div>• Mercer County</div>
+            <div>• Hunterdon County</div>
+            <div>• Warren County</div>
+          </div>
+          <div class="text-center">
+            <a href="tel:267-813-1136" class="bg-lime text-black px-6 py-3 rounded-lg font-semibold hover:bg-lime-light transition-colors">
+              Call (267) 813-1136
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Contact CTA -->
+  <section class="py-20 bg-lime">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-black mb-6">Ready to Get Started?</h2>
+      <p class="text-xl text-black mb-8">Don't wait - call us now for your free consultation and quote!</p>
+      <div class="flex justify-center space-x-4 flex-wrap">
+        <a href="tel:267-813-1136" class="bg-black text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 transition-colors">
+          Call (267) 813-1136
+        </a>
+        <a href="mailto:nolimitconstruction83@gmail.com" class="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-black hover:text-white transition-colors">
+          Email Us
+        </a>
+      </div>
+      <p class="text-black text-sm mt-6">Free estimates • Licensed & Insured • Serving PA & NJ</p>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<script>
+  // Form validation and enhancement
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('form');
+    
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        
+        // Create email body
+        const emailBody = `
+New Construction Quote Request
+
+Name: ${data.firstName} ${data.lastName}
+Email: ${data.email}
+Phone: ${data.phone}
+Location: ${data.location}
+Service: ${data.service}
+Budget: ${data.budget}
+
+Project Details:
+${data.projectDetails}
+
+Consent: ${data.consent ? 'Yes' : 'No'}
+        `;
+        
+        // Create mailto link
+        const mailtoLink = `mailto:nolimitconstruction83@gmail.com?subject=Construction Quote Request&body=${encodeURIComponent(emailBody)}`;
+        
+        // Open email client
+        window.location.href = mailtoLink;
+        
+        // Show success message
+        alert('Thank you for your request! Your email client should now open with a pre-filled message. Please send it to complete your quote request.');
+      });
+    }
+  });
+</script>

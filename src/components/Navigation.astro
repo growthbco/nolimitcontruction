@@ -12,12 +12,24 @@
       </div>
       
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center space-x-8">
-        <span class="hover:text-lime transition-colors cursor-pointer">Home</span>
-        <span class="hover:text-lime transition-colors cursor-pointer">Services</span>
-        <span class="hover:text-lime transition-colors cursor-pointer">Projects</span>
-        <span class="hover:text-lime transition-colors cursor-pointer">About</span>
-        <span class="hover:text-lime transition-colors cursor-pointer">Contact</span>
+      <nav class="hidden lg:flex items-center space-x-6">
+        <a href="/" class="hover:text-lime transition-colors cursor-pointer nav-link">Home</a>
+        <div class="relative group">
+          <button class="hover:text-lime transition-colors cursor-pointer nav-link flex items-center">
+            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-64 bg-gray-900 border border-gray-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="py-2">
+              <a href="/concrete-patios" class="block px-4 py-2 text-sm text-gray-300 hover:text-lime hover:bg-gray-800">Concrete Patios</a>
+              <a href="/concrete-foundations" class="block px-4 py-2 text-sm text-gray-300 hover:text-lime hover:bg-gray-800">Concrete Foundations</a>
+              <a href="/concrete-driveways" class="block px-4 py-2 text-sm text-gray-300 hover:text-lime hover:bg-gray-800">Concrete Driveways</a>
+              <a href="/pole-barns" class="block px-4 py-2 text-sm text-gray-300 hover:text-lime hover:bg-gray-800">Pole Barns</a>
+              <a href="/metal-garages" class="block px-4 py-2 text-sm text-gray-300 hover:text-lime hover:bg-gray-800">Metal Garages</a>
+              <a href="/pools-decks" class="block px-4 py-2 text-sm text-gray-300 hover:text-lime hover:bg-gray-800">Pools & Decks</a>
+            </div>
+          </div>
+        </div>
+        <a href="/contact" class="hover:text-lime transition-colors cursor-pointer nav-link">Contact</a>
       </nav>
       <button class="bg-lime text-black px-6 py-2 rounded-lg font-semibold hover:bg-lime-light transition-colors">
         Get Quote
@@ -45,21 +57,23 @@
   </div>
   
   <!-- Mobile Navigation Menu -->
-  <div id="nav-menu" class="hidden md:hidden">
+  <div id="nav-menu" class="hidden lg:hidden">
     <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black border-t border-gray-800">
-      <a href="#home" class="nav-link text-white hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
+      <a href="/" class="nav-link text-white hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
         Home
       </a>
-      <a href="#services" class="nav-link text-gray-300 hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
-        Services
-      </a>
-      <a href="#projects" class="nav-link text-gray-300 hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
-        Projects
-      </a>
-      <a href="#about" class="nav-link text-gray-300 hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
-        About
-      </a>
-      <a href="#contact" class="nav-link text-gray-300 hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
+      <div class="px-3 py-2">
+        <div class="text-gray-300 text-base font-medium mb-2">Services</div>
+        <div class="pl-4 space-y-1">
+          <a href="/concrete-patios" class="nav-link text-gray-400 hover:text-lime block py-1 text-sm transition-colors duration-200">Concrete Patios</a>
+          <a href="/concrete-foundations" class="nav-link text-gray-400 hover:text-lime block py-1 text-sm transition-colors duration-200">Concrete Foundations</a>
+          <a href="/concrete-driveways" class="nav-link text-gray-400 hover:text-lime block py-1 text-sm transition-colors duration-200">Concrete Driveways</a>
+          <a href="/pole-barns" class="nav-link text-gray-400 hover:text-lime block py-1 text-sm transition-colors duration-200">Pole Barns</a>
+          <a href="/metal-garages" class="nav-link text-gray-400 hover:text-lime block py-1 text-sm transition-colors duration-200">Metal Garages</a>
+          <a href="/pools-decks" class="nav-link text-gray-400 hover:text-lime block py-1 text-sm transition-colors duration-200">Pools & Decks</a>
+        </div>
+      </div>
+      <a href="/contact" class="nav-link text-gray-300 hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
         Contact
       </a>
     </div>
