@@ -5,5 +5,8 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://nolimitconstruction.com',
-  output: 'static'
+  output: 'static',
+  build: {
+    assets: '_astro'
+  }
 });
