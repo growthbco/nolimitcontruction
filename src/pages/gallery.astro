@@ -1,0 +1,226 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Project Gallery - NoLimit Construction | Concrete & Pool Services in PA & NJ">
+  <div class="pt-20">
+    <!-- Hero Section -->
+    <section class="py-20 bg-black">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            Our <span class="text-lime">Project Gallery</span>
+          </h1>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+            Explore our portfolio of concrete construction and pool projects across Pennsylvania and New Jersey. 
+            From residential patios to commercial foundations, see the quality craftsmanship that sets NoLimit Construction apart.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="py-8 bg-gray-900">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <button class="gallery-filter bg-lime text-black px-6 py-3 rounded-lg font-semibold" data-filter="all">
+            All Projects
+          </button>
+          <button class="gallery-filter bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors" data-filter="concrete">
+            Concrete Work
+          </button>
+          <button class="gallery-filter bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors" data-filter="pools">
+            Pool Projects
+          </button>
+          <button class="gallery-filter bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors" data-filter="commercial">
+            Commercial
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-20 bg-black">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
+          
+          <!-- Concrete Patio Project -->
+          <div class="gallery-item group cursor-pointer" data-category="concrete">
+            <div class="relative overflow-hidden rounded-2xl mb-4">
+              <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="/IMG_2703.jpg" alt="Concrete patio project with pool installation" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Custom Concrete Patio</h3>
+                <p class="text-gray-300 text-sm">Residential patio with integrated pool area</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Custom Concrete Patio</h3>
+              <p class="text-gray-400 text-sm mb-3">Beautiful residential patio with pool integration, featuring stamped concrete and professional finishing.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Concrete Patio</span>
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Pool Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commercial Concrete Project -->
+          <div class="gallery-item group cursor-pointer" data-category="commercial">
+            <div class="relative overflow-hidden rounded-2xl mb-4">
+              <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="/IMG_2693.jpg" alt="Commercial concrete installation project" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Commercial Foundation</h3>
+                <p class="text-gray-300 text-sm">Large-scale commercial concrete project</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Commercial Foundation</h3>
+              <p class="text-gray-400 text-sm mb-3">Industrial-grade concrete foundation for commercial building, completed on time and within budget.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Commercial</span>
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Foundation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pool Construction Project -->
+          <div class="gallery-item group cursor-pointer" data-category="pools">
+            <div class="relative overflow-hidden rounded-2xl mb-4">
+              <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="/IMG_2704.jpg" alt="Pool construction and concrete work project" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Pool & Deck Installation</h3>
+                <p class="text-gray-300 text-sm">Complete pool and concrete deck project</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Pool & Deck Installation</h3>
+              <p class="text-gray-400 text-sm mb-3">Complete pool construction with custom concrete deck, featuring professional pool installation and finishing.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Pool Construction</span>
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Concrete Deck</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Concrete Driveway Project -->
+          <div class="gallery-item group cursor-pointer" data-category="concrete">
+            <div class="relative overflow-hidden rounded-2xl mb-4">
+              <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="/photo_2024-01-30_00-33-08.jpg" alt="Concrete driveway installation project" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Residential Driveway</h3>
+                <p class="text-gray-300 text-sm">Professional concrete driveway installation</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Residential Driveway</h3>
+              <p class="text-gray-400 text-sm mb-3">Durable concrete driveway with proper grading and professional finishing for residential property.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Driveway</span>
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Residential</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pole Barn Project -->
+          <div class="gallery-item group cursor-pointer" data-category="commercial">
+            <div class="relative overflow-hidden rounded-2xl mb-4">
+              <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="/IMG_2693.jpg" alt="Pole barn construction project" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Pole Barn Construction</h3>
+                <p class="text-gray-300 text-sm">Custom pole barn with concrete foundation</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Pole Barn Construction</h3>
+              <p class="text-gray-400 text-sm mb-3">Custom pole barn construction with reinforced concrete foundation for agricultural use.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Pole Barn</span>
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Foundation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pool Renovation Project -->
+          <div class="gallery-item group cursor-pointer" data-category="pools">
+            <div class="relative overflow-hidden rounded-2xl mb-4">
+              <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="/photo_2024-01-30_00-34-40.jpg" alt="Pool renovation and concrete work project" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Pool Renovation</h3>
+                <p class="text-gray-300 text-sm">Complete pool renovation with new concrete</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Pool Renovation</h3>
+              <p class="text-gray-400 text-sm mb-3">Complete pool renovation including new concrete deck and updated pool systems.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Pool Repair</span>
+                <span class="bg-gray-800 text-lime px-3 py-1 rounded-full text-xs">Renovation</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-16">
+          <h3 class="text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
+          <p class="text-gray-400 mb-8">Let us bring your vision to life with professional concrete and pool services.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" class="bg-lime text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-lime-light transition-colors">
+              Get Free Quote
+            </a>
+            <a href="tel:267-813-1136" class="border border-lime text-lime px-8 py-4 rounded-lg font-semibold text-lg hover:bg-lime hover:text-black transition-colors">
+              Call (267) 813-1136
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<script>
+  // Gallery filter functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.gallery-filter');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+
+        // Update active button
+        filterButtons.forEach(btn => {
+          btn.classList.remove('bg-lime', 'text-black');
+          btn.classList.add('bg-gray-800', 'text-white', 'hover:bg-gray-700');
+        });
+        button.classList.remove('bg-gray-800', 'text-white', 'hover:bg-gray-700');
+        button.classList.add('bg-lime', 'text-black');
+
+        // Filter gallery items
+        galleryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          
+          if (filter === 'all' || category === filter) {
+            item.style.display = 'block';
+            item.style.animation = 'fadeIn 0.5s ease-in';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
