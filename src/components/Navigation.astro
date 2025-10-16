@@ -1,0 +1,89 @@
+---
+// Navigation component
+---
+
+<header id="header" class="bg-black border-b border-gray-800 fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <i class="fa-solid fa-hammer text-lime text-2xl"></i>
+        <span class="text-xl font-bold">BuildCraft</span>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <span class="hover:text-lime transition-colors cursor-pointer">Home</span>
+        <span class="hover:text-lime transition-colors cursor-pointer">Services</span>
+        <span class="hover:text-lime transition-colors cursor-pointer">Projects</span>
+        <span class="hover:text-lime transition-colors cursor-pointer">About</span>
+        <span class="hover:text-lime transition-colors cursor-pointer">Contact</span>
+      </nav>
+      <button class="bg-lime text-black px-6 py-2 rounded-lg font-semibold hover:bg-lime-light transition-colors">
+        Get Quote
+      </button>
+      
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button
+          id="mobile-menu"
+          class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-lime hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lime transition-colors duration-200"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <!-- Hamburger icon -->
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- Close icon -->
+          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Mobile Navigation Menu -->
+  <div id="nav-menu" class="hidden md:hidden">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black border-t border-gray-800">
+      <a href="#home" class="nav-link text-white hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
+        Home
+      </a>
+      <a href="#services" class="nav-link text-gray-300 hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
+        Services
+      </a>
+      <a href="#projects" class="nav-link text-gray-300 hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
+        Projects
+      </a>
+      <a href="#about" class="nav-link text-gray-300 hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
+        About
+      </a>
+      <a href="#contact" class="nav-link text-gray-300 hover:text-lime block px-3 py-2 text-base font-medium transition-colors duration-200">
+        Contact
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  #nav-menu.active {
+    display: block;
+  }
+  
+  #mobile-menu.active svg:first-child {
+    display: none;
+  }
+  
+  #mobile-menu.active svg:last-child {
+    display: block;
+  }
+  
+  #mobile-menu:not(.active) svg:first-child {
+    display: block;
+  }
+  
+  #mobile-menu:not(.active) svg:last-child {
+    display: none;
+  }
+</style>
